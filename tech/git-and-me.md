@@ -1,10 +1,25 @@
 git clone <url>
+  
 cd repoName
+
 vi ... blah blah blah
+
 git status
+
 git add .   # or needy relative path of selective file
+
 git commit -m "sweet message to appear on history of commits"
+
 git push origin HEAD:refs/heads/master  # Magic ref with Gerr : git push origin HEAD:refs/for/master    # needy branch basically
+
+
+git reset hard origin/needyBranch
+
+git clean -fd
+
+
+git fetch ; git rebase
+
 
 
 Some from Github perspective, but underlying Git commands being the same
