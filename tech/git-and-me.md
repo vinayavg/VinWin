@@ -7,7 +7,7 @@ git commit -m "sweet message to appear on history of commits"
 git push origin HEAD:refs/heads/master  # Magic ref with Gerr : git push origin HEAD:refs/for/master    # needy branch basically
 
 
-# Some from Github perspective, but underlying Git commands being the same
+Some from Github perspective, but underlying Git commands being the same
 
 
 git init projName   # to get started
