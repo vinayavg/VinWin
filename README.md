@@ -1,27 +1,14 @@
-## Welcome to GitHub Pages
+# Big WelCome!!
 
-You can use the [editor on GitHub](https://github.com/vinayavg/VinWin/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Welcome here to VinWin
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Nice to see you here :) . As you can notice from the tree above this repo is about all VinWin
 
-### Markdown
+**Tool** specific tech docs & experimental details goes here. Mr _.md_ here you go!
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+`if-else` text.. 
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
 ```
