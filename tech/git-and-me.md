@@ -1,3 +1,5 @@
+---------------------------------------------------------------------------------------
+
 git clone <url>
   
 cd repoName
@@ -21,6 +23,7 @@ git clean -fd
 git fetch ; git rebase
 
 
+---------------------------------------------------------------------------------------
 
 Some from Github perspective, but underlying Git commands being the same
 
@@ -87,7 +90,8 @@ touch .gitignore
 .classpath
 *.log
 tmp/
-# explicitly using it
+
+explicitly using it
 !audit log
 
 git ls-files --others --ignored --exclude-standard    # to get above list
@@ -136,3 +140,7 @@ git fetch origin
 git pull  origin   # fetch + merge
 
 git push origin
+
+
+---------------------------------------------------------------------------------------
+
