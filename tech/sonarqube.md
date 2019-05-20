@@ -32,3 +32,7 @@ mvn sonar:sonar -Dsonar.analysis.mode=preview -Dsonar.issuesReport.html.enable=t
 
 https://docs.sonarqube.org/latest/
 
+https://github.com/SonarSource/docker-sonarqube/blob/master/recipes.md
+
+https://github.com/SonarSource/docker-sonarqube/blob/master/recipes/docker-compose-postgres-example.yml
+
