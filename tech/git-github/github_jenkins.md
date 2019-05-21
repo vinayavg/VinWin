@@ -51,3 +51,12 @@ Configure Github: Create Personal Access Token with OAuth Scope repo:status
 Configure Jenkins: Configure System and add the OAuth Secret as a GitHub Server - use Secret Text as an authentication method to put the OAuth Secret in there.
 Configure your Jenkins Job: Add Set GitHub commit status as Post-build action. Set the Status Result to One of the default messages and statuses.
 Check your result on GitHub: Check if you get the build status and build execution duration on your GitHub commit.
+
+
+https://dzone.com/articles/how-to-integrate-your-github-repository-to-your-je
+
+https://resources.github.com/whitepapers/practical-guide-to-CI-with-Jenkins-and-GitHub/
+
+https://github.blog/2013-05-16-personal-api-tokens/
+
+https://jenkins.io/doc/book/blueocean/creating-pipelines/
