@@ -12,3 +12,6 @@ DAST involves operational testing, SAST involves looking at the source code and 
 Tech companies offer both DAST and SAST services. Typically, these cover different types of ground in comprehensive testing processes — for example, DAST may only cover certain parts of the interface or design. Using DAST and SAST in combination can help catch different types of security problems before a product is released or develops a growing user base.
 
 
+https://docs.gitlab.com/ee/user/application_security/dast/
+
+
