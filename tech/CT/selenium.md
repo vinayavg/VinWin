@@ -1,3 +1,5 @@
+https://tecadmin.net/
+
 https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/
 
 Setup Selenium with ChromeDriver
@@ -161,5 +163,79 @@ export CLASSPATH=".:selenium-server-standalone.jar:testng-6.8.7.jar"
 javac TecAdminSeleniumTest.java
 java TecAdminSeleniumTest
 You will see results like below. If the defined search string found, You will get message “Pass” and if string not found on the webpage, you will get the “Fail” message on the screen.
+
+
+
+
+
+
+
+
+
+http://selftechy.com/2011/08/17/running-selenium-tests-with-chromedriver-on-linux
+
+
+
+Running Selenium Tests with ChromeDriver on Linux
+
+Some of the pre-requisites has to be setup to execute the Selenium WebDriver tests with chromedriver on Linux
+
+Download the following Softwares before starting to write tests in eclipse.
+
+Download Google Chrome – Chrome for Linux
+Download ChromeDriver – ChromeDriver for Linux
+Install the Google Chrome on the Linux ennvironment by using the following methods:
+
+Double click or use rpm command if the package is “.rpm” (am currently using Fedora) to install the google chrome
+Use apt-get / YUM command to download and then install the package for different Linux flavors accordingly
+Executing ChromeDriver Server:
+
+Inside /home/${user} – create a new directory “ChromeDriver”
+Unzip the downloaded chromedriver into this folder
+Using chmod +x filename or chmod 777 filename make the file executable
+Go to the folder using cd command
+Execute the chrome driver with ./chromedriver command
+Now the chromedriver will start executing in the 9515 port
+[seetaram@Linux chromedriver]$ ./chromedriver
+Started ChromeDriver
+port=9515
+version=14.0.836.0
+Above is the output of the chromedriver server executing in Linux terminal.
+
+After the above is accomplished, try to setup the test on the eclipse
+
+Download the Selenium server 2.0
+Download JUnit
+Unzip both the files and configure them to build path in the eclipse
+Write the test code as below in the Eclipse – Java file
+package com.selftechy.wdriver;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.*;
+
+import org.junit.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.BlockJUnit4ClassRunner;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class ChromeRemoteDriver {
+    
+    public static void main(String []args) throws MalformedURLException{
+        new DesiredCapabilities();
+            URL serverurl = new URL("http://localhost:9515");
+            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            WebDriver driver = new RemoteWebDriver(serverurl,capabilities);
+        driver.get("http://www.google.com");
+        WebElement searchEdit = driver.findElement(By.name("q"));
+        searchEdit.sendKeys("Selftechy on google");
+        searchEdit.submit();
+
+    }
+}
+Now, try to execute the code by clicking Run As –> JUnit Test.  It should be executing the test to the completion.
 
 
